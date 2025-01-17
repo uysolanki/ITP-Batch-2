@@ -3,7 +3,7 @@ package day5;
 public class RecursionDemo {
 
 	public static void main(String[] args) {
-		int n=6;
+		int n=3;
 		int result=sum(n);
 		System.out.println(result);
 
