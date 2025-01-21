@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class ElectricityBill3 {
 
 	public static void main(String[] args) {
+		calculateBill();
+}
+
+	private static void calculateBill() {
 		Scanner sc=new Scanner(System.in);
 
 		System.out.println("Please enter previous month Reading");   // 100
@@ -56,9 +60,5 @@ public class ElectricityBill3 {
 		{
 			System.out.println("Faulty Meter");
 		}
-		
-		
-		
 	}
-
 }
