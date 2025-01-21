@@ -5,12 +5,10 @@ import java.util.Arrays;
 public class SelectionSort {
 
 	public static void main(String[] args) {
-
 		int arr[] = { 6, 5, 2, 9, 3 };
 		System.out.println("Befor Selection Sort " + Arrays.toString(arr));
 		selectionSort(arr);		
 		System.out.println("Aftre Selection Sort " + Arrays.toString(arr));
-
 	}
 
 	private static void selectionSort(int[] arr) {
