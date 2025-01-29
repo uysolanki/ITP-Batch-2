@@ -18,14 +18,40 @@ public class DriverArrayOfObjects {
 		batch[i].displayStudent();
 		}
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter rno to Search"); //102
-		int searchRno=sc.nextInt();
+//		System.out.println("Enter rno to Search"); //103
+//		int searchRno=sc.nextInt();
+//		
+//		int i;
+//		for(i=0;i<batch.length;i++)
+//		{
+//		int result=batch[i].search(searchRno);
+//		if(result==1)
+//		{
+//			System.out.println("Found");
+//			break;
+//		}
+//		}
+//		if(i==batch.length)
+//			System.out.println("Not Found");
 		
 		
-		for(int i=0;i<batch.length;i++)
+		System.out.println("Enter Name to Search"); //103
+		String searchName=sc.next();
+		
+		int i;
+		for(i=0;i<batch.length;i++)
 		{
-		batch[i].search(searchRno);
+		int result=batch[i].search(searchName);
+		if(result==1)
+		{
+			System.out.println("Found");
+			break;
 		}
+		}
+		if(i==batch.length)
+			System.out.println("Not Found");
+		
+		
 	}
 
 }

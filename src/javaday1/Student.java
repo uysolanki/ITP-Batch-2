@@ -31,13 +31,19 @@ public class Student {
 			System.out.println("Percentage  is "+this.percentage);	
 		}
 
-		public void search(int z)  //this.rno=103 z=102
+		public int search(int z)  //this.rno=101 z=102
 		{
 			if(this.rno==z)
-			{
-				System.out.println("Found");
-			}
-			
+				return 1;
+			else 
+				return -1;
+		}
+
+		public int search(String searchName) {
+			if(this.studentName.equals(searchName))
+				return 1;
+			else 
+				return -1;
 		}
 		
 }
