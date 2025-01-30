@@ -35,23 +35,46 @@ public class DriverArrayOfObjects {
 //			System.out.println("Not Found");
 		
 		
-		System.out.println("Enter Name to Search"); //103
-		String searchName=sc.next();
+//		System.out.println("Enter Name to Search"); //103
+//		String searchName=sc.next();
+//		
+//		int i;
+//		for(i=0;i<batch.length;i++)
+//		{
+//		int result=batch[i].search(searchName);
+//		if(result==1)
+//		{
+//			System.out.println("Found");
+//			break;
+//		}
+//		}
+//		if(i==batch.length)
+//			System.out.println("Not Found");
+//		
 		
-		int i;
-		for(i=0;i<batch.length;i++)
+//		
+//		double maxPer=batch[0].getPercentage();
+
+//		for(int j=1;j<batch.length;j++)
+//		{
+//			if(batch[j].getPercentage()>maxPer)
+//			{
+//				maxPer=batch[j].getPercentage();
+//			}
+//		}
+//		System.out.println(maxPer);
+		
+		
+		Student topper=batch[0];
+		for(int j=1;j<batch.length;j++)
 		{
-		int result=batch[i].search(searchName);
-		if(result==1)
-		{
-			System.out.println("Found");
-			break;
+			if(batch[j].getPercentage()>topper.getPercentage())
+			{
+				topper=batch[j];
+			}
 		}
-		}
-		if(i==batch.length)
-			System.out.println("Not Found");
-		
-		
+		System.out.println("Topper Details");
+		topper.displayStudent();
 	}
 
 }
