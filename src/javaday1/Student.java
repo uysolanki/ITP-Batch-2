@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Student {
 
 		private int rno;				//instance scope
-		private String studentName;
-		private String motherName;
-		private double percentage;
+		private String studentName;     //instance 
+		private String motherName;      //instance
+		private double percentage;      //instance
+		private static String principalName="Smith";    //static scope
 		
 		public void acceptStudent()
 		{
@@ -31,6 +32,10 @@ public class Student {
 			System.out.println("Percentage  is "+this.percentage);	
 		}
 
+		public static void displayPrincipalName()
+		{
+			System.out.println("Principal Name is "+ Student.principalName);
+		}
 		public int search(int z)  //this.rno=101 z=102
 		{
 			if(this.rno==z)

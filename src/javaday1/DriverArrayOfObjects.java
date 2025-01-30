@@ -65,16 +65,24 @@ public class DriverArrayOfObjects {
 //		System.out.println(maxPer);
 		
 		
-		Student topper=batch[0];
-		for(int j=1;j<batch.length;j++)
-		{
-			if(batch[j].getPercentage()>topper.getPercentage())
-			{
-				topper=batch[j];
-			}
-		}
-		System.out.println("Topper Details");
-		topper.displayStudent();
+//		Student topper=batch[0];
+//		for(int j=1;j<batch.length;j++)
+//		{
+//			if(batch[j].getPercentage()>topper.getPercentage())
+//			{
+//				topper=batch[j];
+//			}
+//		}
+//		System.out.println("Topper Details");
+//		topper.displayStudent();
+		
+		batch[0].displayPrincipalName();
+		batch[1].displayPrincipalName();
+		batch[2].displayPrincipalName();
+		
+		
 	}
+	
+	
 
 }
