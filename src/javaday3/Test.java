@@ -9,11 +9,8 @@ public class Test {
 		y=20;
 		System.out.print("Virat");
 	}
-	
+
 public static void main(String[] args) {
 	System.out.println("Kohli");
 }
 }
-
-
-//output ViratKohli
