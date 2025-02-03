@@ -28,7 +28,7 @@ public class Student {
 		this.per = per;
 		
 	}
-	public void acceptStudent()
+	public void acceptMyStudentDetails()
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter rno");
