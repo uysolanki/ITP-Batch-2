@@ -8,7 +8,6 @@ public class HierarchicleInheritanceDemo {
 		
 		SavingAccount s2=new SavingAccount(1777,"Ben",9999,9.9);
 		s2.displaySavingAccount();
-
 	}
 
 }

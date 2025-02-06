@@ -54,4 +54,38 @@ public class Student {
 		System.out.println("Per is "+this.per);
 		System.out.println("Pnr Active status is "+this.isPnrActive);
 	}
+
+	public int getRno() {
+		return rno;
+	}
+
+	public void setRno(int rno) {
+		this.rno = rno;
+	}
+
+	public String getSname() {
+		return sname;
+	}
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+	public double getPer() {
+		return per;
+	}
+
+	public void setPer(double per) {
+		this.per = per;
+	}
+
+	public boolean isPnrActive() {
+		return isPnrActive;
+	}
+
+	public void setPnrActive(boolean isPnrActive) {
+		this.isPnrActive = isPnrActive;
+	}
+	
+	
 }
