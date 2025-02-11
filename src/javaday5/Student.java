@@ -6,23 +6,17 @@ public class Student {
 	private String sname;
 	private double per;
 	private boolean isPnrActive;
-	public Student() {}
-//	public Student()  //No Args Constructor - Non Parameterise constructor
-//	{
-//		this.rno=1;
-//		this.sname="Alice";
-//		this.per=40.0;
-//		this.isPnrActive=true;
-//	}
+	final double PI=3.14;
 	
-//	public Student(int a,String b,double c, boolean d)  //All Args Constructor - Parameterise constructor
-//	{
-//		this.rno=a;
-//		this.sname=b;
-//		this.per=c;
-//		this.isPnrActive=d;
-//	}
-//	
+	public Student()  //No Args Constructor - Non Parameterise constructor
+	{
+		this.rno=1;
+		this.sname="Alice";
+		this.per=40.0;
+		this.isPnrActive=true;
+	}
+	
+	
 	public Student(int a,String b,boolean d,double c)  //All Args Constructor - Parameterise constructor
 	{
 		this.rno=a;
@@ -47,13 +41,7 @@ public class Student {
 	this.isPnrActive = isPnrActive;
 }
 
-	public void displayStudent()
-	{
-		System.out.println("Rno is "+this.rno);
-		System.out.println("Name is "+this.sname);
-		System.out.println("Per is "+this.per);
-		System.out.println("Pnr Active status is "+this.isPnrActive);
-	}
+	
 
 	public int getRno() {
 		return rno;
@@ -85,6 +73,12 @@ public class Student {
 
 	public void setPnrActive(boolean isPnrActive) {
 		this.isPnrActive = isPnrActive;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Student [roll number =" + rno + ", student name=" + sname + ", percentage =" + per + ", is pnr active=" + isPnrActive + "]";
 	}
 	
 	

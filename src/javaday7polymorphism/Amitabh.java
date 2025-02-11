@@ -1,9 +1,10 @@
 package javaday7polymorphism;
 
-public class Amitabh {
+ public class Amitabh {
 
 	public String qualification="LLB";
-	void car()
+	public final double GRAVITY=9.8;
+	final void car()
 	{
 		System.out.println("Audi");
 	}
