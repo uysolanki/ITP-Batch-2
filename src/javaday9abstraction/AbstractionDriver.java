@@ -11,6 +11,11 @@ public static void main(String[] args) {
 	r=new FootballField();
 	r.area();
 	r.perimeter();
-	
 }
+
+
+		public Shape2D test()
+		{
+			return new FootballField();
+		}
 }
