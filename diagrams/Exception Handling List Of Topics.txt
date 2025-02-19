@@ -2,21 +2,21 @@ Exception Handling(EH)
 1. Defination(done)
 2. Built class Hierarchy in EH(done)
 3. Java's natural reaction (immediate response) when an exception occurs(done)
-4. sample program to show EH
-5. Categories of Exceptions
-6. Structure of EH
-7. Multiple Catch blocks
-8. Default EH
-9. Handling Multiple Exceptions in single catch
-10. Nested Try
-11. finally block
+4. sample program to show EH(done)
+5. Categories of Exceptions(Checked ,Unchecked) (done)
+6. Structure of EH (done)
+7. Multiple Catch blocks(done)
+8. Default EH(done)
+9. Handling Multiple Exceptions in single catch(done)
+10. Nested Try(done)
+11. finally block(done)
 12. diff between final finally finalize
-13. Try with resources
-14. User Defined Exception
-15. throw keyword
-16. throws keyword
-17. diff between throw,throws and Throwable
-18. Exception Delegation
-19. Global Exception Handler
-20. Interview Question on EH
+13. Try with resources 								(postpone to File Handling)
+14. User Defined Exception (done)
+15. throw keyword (done)
+16. throws keyword (done)
+17. diff between throw,throws and Throwable(done)
+18. Exception Delegation(done)
+19. Global Exception Handler 						(Springboot)
+20. Interview Question on EH (done)
 
