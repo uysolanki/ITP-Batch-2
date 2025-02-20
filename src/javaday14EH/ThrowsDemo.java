@@ -4,7 +4,8 @@ import java.io.IOException;
 
 public class ThrowsDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException
+	{
 //		try
 //		{
 //			double result=divide(10,5);
@@ -14,12 +15,18 @@ public class ThrowsDemo {
 //		{
 //			System.out.println(e1.getMessage());
 //		}
-		try
-		{
+		
+		//Part 1
+//		try
+//		{
+//		double result=divide(10,0);
+//		System.out.println(result);	
+//		}
+//		catch(IOException e1) {}
+		
+		
 		double result=divide(10,0);
 		System.out.println(result);	
-		}
-		catch(IOException e1) {}
 
 	}
 
