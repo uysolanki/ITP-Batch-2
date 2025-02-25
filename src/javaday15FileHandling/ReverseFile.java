@@ -40,7 +40,7 @@ public class ReverseFile {
 		int buffer;
 		
 		
-		StringBuffer sb=new StringBuffer("");  //1000
+		StringBuffer sb=new StringBuffer("");  //1000"" "Apple" elppA
 		while((buffer=fis.read())!=-1)
 		{
 			char ch=(char)buffer;

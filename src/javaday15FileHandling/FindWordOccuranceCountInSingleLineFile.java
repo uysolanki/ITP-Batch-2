@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class FindWordOccuranceCountInSingleLineFile {
 
 	public static void main(String[] args) throws FileNotFoundException,IOException {
-		FileReader fileReader=new FileReader("itp/file2.txt");
+		FileReader fileReader=new FileReader("itp/file1.txt");
 		BufferedReader br=new BufferedReader(fileReader);
 		Scanner sc=new Scanner(System.in);
 		String buffer;
@@ -20,11 +20,11 @@ public class FindWordOccuranceCountInSingleLineFile {
 		int occuranceCount=0;
 		do
 		{
-			index=buffer.indexOf(search,index);  //index=17
+			index=buffer.indexOf(search,index);  	//index=17
 				if(index!=-1)
 				{
 					occuranceCount++;				//wc= 0, 1,2
-					index=index+search.length();//index=17
+					index=index+search.length();	//index=17
 				}
 				
 		}while(index!=-1);
