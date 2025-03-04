@@ -1,6 +1,8 @@
 package javaday17.collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class ArrayListEmpDriver {
@@ -12,7 +14,7 @@ public class ArrayListEmpDriver {
 		Employee e2=new Employee(102,"Ben",900,"IT");
 		Employee e3=new Employee(103,"Chris",1000,"SALES");
 		Employee e4=new Employee(104,"David",1100,"SALES");
-		Employee e5=new Employee(105,"Elcis",1200,"MARK");
+		Employee e5=new Employee(105,"Elcid",1200,"MARK");
 		
 		employees.add(e1);
 		employees.add(e2);
@@ -21,6 +23,7 @@ public class ArrayListEmpDriver {
 		employees.add(e5);
 		double sum=0;
 		int count=0;
+		List<Employee> deptEmployees = new ArrayList();
 		
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter Dept Name");
@@ -30,14 +33,23 @@ public class ArrayListEmpDriver {
 		{												//0					0
 			if(emp.getDname().equalsIgnoreCase(deptName))			//1					800
 			{											//2					1700
-				sum+=emp.getSalary();
-				count++;
+				deptEmployees.add(emp);
 			}
 		}
 		
-		System.out.println("Total Salary of IT Dept "+sum);
-		System.out.println("Average Salary of IT Dept "+sum/count);
-
+		System.out.println(deptEmployees);
+		
+		double maxSalary=0;
+		Employee max=null;
+		for(Employee deptEmp:deptEmployees)
+		{
+				if(deptEmp.getSalary()>maxSalary)
+				{
+					maxSalary=deptEmp.getSalary();
+					max=deptEmp;
+				}
+		}
+		System.out.println("Maximum Earning employee in "+deptName.toUpperCase()+ " Dept is " + max.getEname());
 	}
 
 }
