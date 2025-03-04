@@ -21,7 +21,7 @@ public class CollectionInterfaceMethods {
 	   System.out.println(a1.size());
 	   System.out.println(a1.isEmpty());
 	   
-//	    
+	    
 //	    HashSet h1=new HashSet();
 //	    System.out.println(h1.add("Alice"));   //true
 //	    System.out.println(h1.add("Ben"));     //true
