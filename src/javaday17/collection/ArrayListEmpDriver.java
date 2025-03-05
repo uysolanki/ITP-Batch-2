@@ -29,10 +29,10 @@ public class ArrayListEmpDriver {
 		System.out.println("Enter Dept Name");
 		String deptName=sc.next();
 		
-		for(Employee emp:employees)						//count				sum
-		{												//0					0
-			if(emp.getDname().equalsIgnoreCase(deptName))			//1					800
-			{											//2					1700
+		for(Employee emp:employees)						 //count				sum
+		{												 //0					0
+			if(emp.getDname().equalsIgnoreCase(deptName))//1					800
+			{											 //2					1700
 				deptEmployees.add(emp);
 			}
 		}
