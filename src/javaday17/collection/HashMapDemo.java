@@ -16,6 +16,7 @@ public class HashMapDemo {
 		employees.put("Ben", 900.0);
 		employees.put("Chris", 1200.0);
 		employees.put("David", 1100.0);
+		employees.put("Alice", 1500.0);
 		
 		//System.out.println(employees);
 		
