@@ -33,17 +33,22 @@ public class HashMapDemo4 {
 	System.out.println(sentance);
 	System.out.println(Arrays.toString(words));
 	Map<String,Integer> counter=new HashMap();
-	for(String word:words)
-	{
-		if(counter.containsKey(word))
+//	for(String word:words)
+//	{
+//		if(counter.containsKey(word))
+//		{
+//			counter.put(word, counter.get(word)+1);
+//		}
+//		else
+//		{
+//			counter.put(word, 1);					//my	1
+//		}											//name  2
+//	}	
+				
+		for(String word:words)
 		{
-			counter.put(word, counter.get(word)+1);
-		}
-		else
-		{
-			counter.put(word, 1);					//my	1
-		}											//name  1
-	}	
+			counter.put(word, counter.getOrDefault(word, 0)+1);								//name  2
+		}	
 		System.out.println(counter);											//is 	3
 	}												//alice 2
 }													//a     1
