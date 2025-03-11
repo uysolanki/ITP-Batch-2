@@ -2,7 +2,8 @@ package javaday17.collection;
 
 import java.util.Scanner;
 
-public class Student {
+public class Student implements Comparable<Student>
+{
 	
 	private int rno;
 	private String sname;
@@ -54,6 +55,38 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [rno=" + rno + ", sname=" + sname + ", per=" + per + "]";
+	}
+
+	@Override
+	public int compareTo(Student s) {
+		
+		//desc order of rno
+//		if(this.rno>s.rno)
+//			return -1;
+//		else if(this.rno<s.rno)
+//			return 1;
+//		else
+//			return 0;
+		
+//		//Asc order of rno
+//		if(this.rno>s.rno)
+//				return 1;
+//		else if(this.rno<s.rno)
+//				return -1;
+//		else
+//				return 0;
+		
+		
+		//desc order of per
+//		if(this.per>s.per)
+//			return -1;
+//		else if(this.per<s.per)
+//			return 1;
+//		else
+//			return 0;
+		
+		//Asc order of name
+		return this.sname.compareTo(s.sname);
 	}
 
 	
