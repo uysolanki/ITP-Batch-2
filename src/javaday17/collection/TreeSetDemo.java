@@ -52,7 +52,7 @@ public class TreeSetDemo {
 		Student s2=new Student(1,"Rahul",88.5);
 		Student s3=new Student(45,"Rohit",68.5);
 		
-		Set<Student> students=new TreeSet();
+		Set<Student> students=new TreeSet(new SnameComparatorAsc());
 		students.add(s1);
 		students.add(s2);
 		students.add(s3);
