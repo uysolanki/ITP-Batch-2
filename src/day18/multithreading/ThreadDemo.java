@@ -11,8 +11,8 @@ public class ThreadDemo {
 		tx.start();
 		
 		thread2.start();
-		for(char i='a';i<='z';i++)
-			System.out.println("\t\t"+i);
+//		for(char i='a';i<='z';i++)
+//			System.out.println("\t\t"+i);
 
 	}
 
