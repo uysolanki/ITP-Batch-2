@@ -1,6 +1,6 @@
 package day18.multithreading;
 
-public class Alpha implements Runnable
+public class Alpha extends Thread
 {
 @Override
 public void run() {
