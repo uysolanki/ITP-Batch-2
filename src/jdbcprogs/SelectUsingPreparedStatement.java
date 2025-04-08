@@ -29,7 +29,6 @@ public class SelectUsingPreparedStatement {
 		if(rs.next())
 			System.out.println(String.format("%-15s", rs.getString("ename")) + String.format("%-15s", rs.getDouble("sal")));
 		
-		
 		ps.close();
 		con.close();
 		
